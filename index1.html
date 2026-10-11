@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <p> <i class="fa-solid fa-wallet"></i>Expense Tracker</p>
+         <a href="#">
+        <i class="fa-solid fa-house"></i>
+        Home
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-bars"></i>
+        Transactions
+    </a>
+    <a href="#">
+        <i class="fa-solid fa-gear"></i>
+        Settings
+    </a>
+    <p id="q"><i class="fa-solid fa-heart"></i>Small steps<br>Make big goals</p>
+  </div>
+  
+  <div class="middle-content">
+    <h1>Welcome back!</h1>
+    <p>Track your spending and save your goals</p>
+   
+<div class="box">
+    <div class="box1">
+        <i class="fa-solid fa-arrow-down"></i>
+        <br>Total Income
+        <p id="totalIncome">₹0</p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-arrow-up"></i>
+        <br>Total Expense
+        <p id="totalExpense">₹0</p>
+    </div>
+
+    <div class="box3">
+        <i class="fa-solid fa-wallet"></i>
+        <br>Balance
+        <p id="balance">₹0</p>
+    </div>
+
+    <div class="box4">
+        <i class="fa-solid fa-calendar-days"></i>
+        <br>Transactions
+        <p id="totalTransactions">0</p>
+    </div>
+</div>
+
+    <div class="trans-details">
+        <label for="Type">Type</label>
+        <select id="type">
+        <option value="1">Income</option>
+        <option value="2">Expense</option></select>
+
+        <label for="amount">Amount</label>
+        <input form="number" id="amount" placeholder="Enter amount" min="0.01" step="0.01" required>
+        <label for="category"></label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Travel">Travel</option>
+                <option value="Education">Education</option>
+                <option value="Salary">Salary</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="description">Description</label>
+            <input  type="text" id="description" placeholder="Add a note" required>
+
+            <button type="button" id="addTransaction">
+                <i class="fa-solid fa-plus"></i>
+                  Add Transaction
+            </button>
+    </div>
+</div>
+<div class="recent-transactions">
+    <h2>Recent Transactions</h2>
+
+    <div id="transactionList">
+        <p>No transactions yet.</p>
+    </div>
+</div>
+
+  
+
+  
+    <script src="script1.js"></script>
+</body>
+</html>
